@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Website;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index() {
 
-
-        return view('home.index');
+        $websites = Website::all();
+        return view('home.index', ['websites' => $websites]);
 
     }
 }

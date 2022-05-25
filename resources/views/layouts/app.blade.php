@@ -31,7 +31,7 @@
 
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html">JPhotography</a>
+          <a class="navbar-brand" href="#">WatchMun</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar i1"></span>
             <span class="icon-bar i2"></span>
@@ -46,9 +46,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="about-me.html">ABOUT ME</a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
@@ -57,208 +57,7 @@
           </div>
         </nav>
 
-        <div id="hero-text">
-          <div class="container">
-            <h1>Hi. Hello.. I Am JohnDas...!</h1>
-            <h2>I Travel Around The World To Get The Best Photos.!</h2>
-            <h5>AWARD WINNING PHOTOGRAPHER  / CINEMATOGRAPHER / WRITER</h5>
-          </div>
-        </div>
-      </header>
 
-      <!-- Corner Borders -->
-    <section class="borders">
-        <div class="brTR">
-        </div>
-        <div class="brTL">
-        </div>
-        <div class="brBL">
-        </div>
-        <div class="brBR">
-        </div>
-      </section>
-
-      <section class="gallery">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Mixit Up Controls -->
-            <div class="controls">
-              <button type="button" class="control" data-filter="all">All</button>
-              <button type="button" class="control" data-filter=".landscape">Landscape</button>
-              <button type="button" class="control" data-filter=".portrait">Portrait</button>
-              <button type="button" class="control" data-filter=".product">Product</button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="fw mix-container home-gallery">
-                <div class="mix portrait">
-                 <a href="project-1.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Happy Girl</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/by-magdalena-roeseler.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape portrait product">
-                 <a href="project-slider.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>The Sigar Men</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/cigar.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape product">
-                 <a href="project-video.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Yoga/Meditation</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/yoga.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape portrait">
-                 <a href="project-1.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Shoes on Tracks</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/shoes.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape product">
-                 <a href="project-slider.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Happy FaceUp</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/grimace.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-
-              <div class="mix landscape portrait">
-                 <a href="project-video.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Lemon Face</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/lemon.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix portrait product">
-                 <a href="project-1.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Hunger Man</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/hunger.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape portrait product">
-                 <a href="project-slider.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Photo By Photographer</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/photographer-f.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape portrait">
-                 <a href="project-video.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Vintage Camera</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/camera.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape portrait product">
-                 <a href="project-1.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Camera Frame</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/frame.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape">
-                 <a href="project-slider.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Girl In Garden</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/girl-indark.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape portrait">
-                 <a href="project-video.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Girl Portrait B/W</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/woman.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix portrait product">
-                 <a href="project-1.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Retro Photographer</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/photographer.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape product portrait">
-                 <a href="project-slider.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Spiral View</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/nautre-view.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix landscape">
-                 <a href="project-video.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Happy Clouds</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/way.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-              <div class="mix portrait">
-                 <a href="project-1.html" class="thumb-a">
-                    <div class="item-hover">
-                      <div class="hover-text"><h3>Photographer Phose</h3></div>
-                    </div>
-                    <div class="item-img">
-                      <img src="images/girl-with-camera.jpg" alt=""/>
-                    </div>
-                 </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
 
 
 @yield('content')

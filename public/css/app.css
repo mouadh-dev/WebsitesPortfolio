@@ -106,10 +106,10 @@ CSS Smooth Aiimation Transition
 .item-inner,
 .controls button,
 .item-hover .hover-text,
-.item-hover, 
+.item-hover,
 .home-gallery .thumb-a,
 .hover-text h3,
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-button-next,
 footer a{
     transition: all 0.25s ease-in-out;
@@ -129,8 +129,8 @@ Nav Bar Styles
     font-weight: 900;
 }
 
-.navbar-default .navbar-brand, 
-.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
     color: #252525;
 }
@@ -152,7 +152,7 @@ Nav Bar Styles
 
 
 .navbar-light .navbar-nav > .active > a,
-.navbar-light .navbar-nav > .active > a:focus, 
+.navbar-light .navbar-nav > .active > a:focus,
 .navbar-light .navbar-nav > .active > a:hover {
     color: #252525;
     background-color: transparent;
@@ -203,11 +203,11 @@ Nav Bar Styles
 
 /*Borders*/
 
-.borders div {
+/* .borders div {
     z-index: 9999;
     pointer-events: none;
     background-color: transparent;
-    border-color: #252525;
+    border-color: #f50000;
     border-style: solid;
     height: 90px;
     position: fixed;
@@ -236,7 +236,7 @@ Nav Bar Styles
     border-width: 0 15px 15px 0;
     bottom: 0;
     right: 0;
-}
+} */
 
 
 /*=========
@@ -669,7 +669,7 @@ footer a:hover {
 ========================================*/
 @media only screen and (max-width: 1500px) {
     nav li {
-        padding: 8px 10px; 
+        padding: 8px 10px;
     }
     .home-gallery .mix {
         width: 33.333%;
@@ -678,7 +678,7 @@ footer a:hover {
 
 @media only screen and (max-width: 1199px) {
     nav li {
-        padding: 6px 8px; 
+        padding: 6px 8px;
     }
     .navbar-light .navbar-nav .nav-link {
         padding-right: 10px;
@@ -821,3 +821,4 @@ footer a:hover {
         font-size: 22px;
     }
 }
+
