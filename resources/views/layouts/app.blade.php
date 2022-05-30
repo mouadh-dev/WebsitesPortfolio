@@ -29,37 +29,9 @@
 
 <body>
 
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">WatchMun</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar i1"></span>
-            <span class="icon-bar i2"></span>
-            <span class="icon-bar i3"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarDefault">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-me.html">ABOUT ME</a>
-              </li>
-              {{-- <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-              </li> --}}
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
 
 
-
-
+    @include('layouts.partials.header')
 @yield('content')
 
 @include('layouts.partials.footer')
@@ -70,7 +42,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 {{-- <script src="{{ asset('js/mixitup.min.js') }}"></script> --}}
 <script src="{{ asset('js/app.js') }}"></script>
-<script>
+{{-- <script>
     var containerEl = document.querySelector('.mix-container');
 
     var mixer = mixitup(containerEl, {
@@ -78,7 +50,7 @@
             effects: 'fade scale stagger(50ms)' // Set a 'stagger' effect for the loading animation
         }
     });
-</script>
+</script> --}}
 
 </body>
 </html>

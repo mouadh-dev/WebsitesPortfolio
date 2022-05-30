@@ -13,16 +13,25 @@ CSS Styles Content Table
 6. Project Single
 7. Footer Global Styles
 */
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 /*===========
 Global Styles
 =============*/
-body {
-    font-family: 'Playfair Display', serif;
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
-h1, h2, h3, a, .btn{
-    font-family: 'Playfair Display', serif;
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+h1,
+h2,
+h3,
+a,
+.btn {
+    font-family: "Kanit", sans-serif;
     color: #252525;
 }
 
@@ -30,8 +39,11 @@ h2 {
     margin-bottom: 0;
 }
 
-h4, h5, h6, p {
-    font-family: 'Raleway', sans-serif;
+h4,
+h5,
+h6,
+p {
+    font-family: "Kanit", sans-serif;
     color: #696969;
 }
 
@@ -39,20 +51,19 @@ p {
     line-height: 1.7;
 }
 
-
 h1 {
     font-size: 36px;
     font-weight: 900;
 }
 
-.h3, h3 {
+.h3,
+h3 {
     font-size: 24px;
 }
 
 h5 {
     font-size: 16px;
 }
-
 
 .img-center {
     display: block;
@@ -87,7 +98,6 @@ h5 {
     border: 1px solid #252525;
     color: #252525;
     border-radius: 2px;
-
 }
 .btn.btn-invert:hover {
     background-color: #252525;
@@ -98,7 +108,6 @@ h5 {
 .mgR-20px {
     margin-right: 20px;
 }
-
 
 /*=============================
 CSS Smooth Aiimation Transition
@@ -111,7 +120,7 @@ CSS Smooth Aiimation Transition
 .hover-text h3,
 .swiper-button-prev,
 .swiper-button-next,
-footer a{
+footer a {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -119,13 +128,15 @@ footer a{
     transition: all 0.25s ease-in-out;
 }
 
-
 /*============
 Nav Bar Styles
 ==============*/
 
 .container-fluid .navbar {
     padding: 30px 8%;
+    margin-right: 0px;
+    margin-left: 0px !important;
+    background-color: #19a1a383 !important;
 }
 
 .navbar-brand {
@@ -154,6 +165,9 @@ Nav Bar Styles
     color: #252525;
 }
 
+/* #navbarDefault li a#current:active {
+    color:#ff0033;
+    } */
 
 .navbar-light .navbar-nav > .active > a,
 .navbar-light .navbar-nav > .active > a:focus,
@@ -162,39 +176,39 @@ Nav Bar Styles
     background-color: transparent;
 }
 
-.navbar-toggler > .i1{
-    top:9px;
+.navbar-toggler > .i1 {
+    top: 9px;
 }
 
-.navbar-toggler > .i2{
-    top:17px;
+.navbar-toggler > .i2 {
+    top: 17px;
 }
 
-.navbar-toggler > .i3{
-    top:25px;
+.navbar-toggler > .i3 {
+    top: 25px;
 }
 
-.navbar-toggler.active > .i2{
-    opacity:0;
+.navbar-toggler.active > .i2 {
+    opacity: 0;
 }
 .navbar-toggler.active > .i1,
-.navbar-toggler.active > .i3{
-    top:17px;
+.navbar-toggler.active > .i3 {
+    top: 17px;
 }
 
-.navbar-toggler.active > .i1{
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    transform:rotate(45deg);
+.navbar-toggler.active > .i1 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
-.navbar-toggler.active > .i3{
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    transform:rotate(-45deg);
+.navbar-toggler.active > .i3 {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .navbar-toggler {
@@ -207,13 +221,12 @@ Nav Bar Styles
     width: 30px;
     left: 10px;
     margin: 0 !important;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-    background-color: #888;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: rgb(0, 0, 0);
     height: 3px;
 }
-
 
 /*Borders*/
 
@@ -252,13 +265,12 @@ Nav Bar Styles
     right: 0;
 } */
 
-
 /*=========
 Header Text
 ===========*/
 
 #hero-text {
-    padding-top: 110px;
+    /* padding-top: 110px; */
     padding-bottom: 110px;
     text-align: center;
     margin-bottom: 0;
@@ -276,10 +288,24 @@ Header Text
     color: #696969;
 }
 
+
+/*==========
+Cover Image
+==========*/
+.cont-img{
+    margin-bottom: 30px;
+}
+
+.cont-img .thumb-a {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+
 /*==========
 Home Gallery
 ==========*/
-
 
 h4 {
     color: grey;
@@ -337,12 +363,10 @@ nav li:hover {
 }
 
 nav li.active {
-    color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+    /* color: rgba(255, 0, 0, 0);
+    border: 1px solid rgba(190, 0, 0, 0);
+    border-radius: 15px; */
 }
-
-
 
 .item-inner {
     background: #fff;
@@ -356,7 +380,7 @@ nav li.active {
     bottom: 15px;
     left: 15px;
     width: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #F9AF3C;
     z-index: 7;
     opacity: 0;
     visibility: hidden;
@@ -369,8 +393,7 @@ nav li.active {
     bottom: 0px;
 }
 
-
-.hover-text h3{
+.hover-text h3 {
     margin: 0;
     color: #fff;
 }
@@ -391,21 +414,18 @@ a:hover {
     text-decoration: none;
 }
 
-
 .item-inner:hover {
     border-radius: 6px;
 }
 
-.thumb-a:hover .item-hover{
+.thumb-a:hover .item-hover {
     opacity: 1;
     visibility: visible;
     border-radius: 4px;
 }
-.thumb-a:hover .item-hover .hover-text{
+.thumb-a:hover .item-hover .hover-text {
     bottom: 0;
-
 }
-
 
 /*===========
 Home Page Gallery
@@ -416,12 +436,13 @@ Home Page Gallery
     background-color: transparent;
     border-radius: 25px;
     padding: 10px 25px;
-    color: #7C7C7C;
+    color: #7c7c7c;
     cursor: pointer;
     border: 1px solid transparent;
 }
 
-.controls button:hover, .controls button.mixitup-control-active {
+.controls button:hover,
+.controls button.mixitup-control-active {
     border: 1px solid #656565;
     border-radius: 25px;
     color: #656565;
@@ -448,6 +469,8 @@ Home Page Gallery
     max-width: 2000px;
     display: inline-block;
     padding: 0 7.5px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .home-gallery .mix {
@@ -459,19 +482,21 @@ Home Page Gallery
 
 .home-gallery .mix a:before {
     bottom: 0px;
-pointer-events: none;
-right: 0px;
-box-shadow: inset 0px 0px 60px rgba(0,0,0,0.2), inset 0px 0px 60px rgba(0,0,0,0.2);
-position: absolute;
-transition: box-shadow 0.2s ease-in-out 0s;
-left: 0px;
-top: 0px;
-content: "";
--webkit-transition: box-shadow 0.2s ease-in-out 0s;
+    pointer-events: none;
+    right: 0px;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.2),
+        inset 0px 0px 60px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    left: 0px;
+    top: 0px;
+    content: "";
+    -webkit-transition: box-shadow 0.2s ease-in-out 0s;
 }
 
 .home-gallery .mix:hover a:before {
-box-shadow: inset 0px 0px 20px rgba(0,0,0,0.1), inset 0px 0px 20px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .home-gallery .thumb-a {
@@ -489,7 +514,6 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.1), inset 0px 0px 20px rgba(0,0,0,0.
 .home-gallery .item-img img {
     max-width: 100%;
 }
-
 
 .section-title {
     text-align: center;
@@ -529,7 +553,6 @@ About Me Page
     font-size: 18px;
     font-weight: 300;
     color: #252525;
-
 }
 
 .p-bar .text-right {
@@ -539,10 +562,11 @@ About Me Page
 /*=============
 Contact Page
 =============*/
-.contact a, .form-control {
+.contact a,
+.form-control {
     color: #696969;
     font-weight: 300;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .contact .form-control {
@@ -557,8 +581,8 @@ Contact Page
     margin-top: 100px;
 }
 .contact-info .card {
-    background-color: #F4F4F4;
-    border:none;
+    background-color: #f4f4f4;
+    border: none;
     padding: 50px 10px;
     text-align: center;
 }
@@ -578,11 +602,11 @@ Contact Page
     padding-bottom: 16px;
 }
 
-.contact-info .card a, .contact-info .card p {
+.contact-info .card a,
+.contact-info .card p {
     font-size: 14px;
     line-height: 26px;
 }
-
 
 .contact-info .card a:hover {
     text-decoration: underline;
@@ -637,7 +661,8 @@ Project Single
     width: 160px;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     background-image: none;
     width: auto;
     height: auto;
@@ -658,7 +683,8 @@ Footer Global Styles
 .footer-info {
     padding: 120px 0;
     text-align: center;
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
+    background-color: #19a1a374 !important;
     margin-top: 120px;
 }
 
@@ -667,7 +693,8 @@ footer a {
     padding: 0 16px;
 }
 
-footer a, footer a:link {
+footer a,
+footer a:link {
     text-decoration: none;
     color: #777;
 }
@@ -675,8 +702,6 @@ footer a, footer a:link {
 footer a:hover {
     color: #202020;
 }
-
-
 
 /*========================================
 ========================================
@@ -709,7 +734,8 @@ footer a:hover {
     #hero-text h5 {
         letter-spacing: 3px;
     }
-    .h3, h3 {
+    .h3,
+    h3 {
         font-size: 18px;
     }
     .project-holder .project-video {
@@ -833,7 +859,8 @@ footer a:hover {
         padding-bottom: 60px;
         padding-top: 80px;
     }
-    .h2, h2 {
+    .h2,
+    h2 {
         font-size: 22px;
     }
 }

@@ -33,13 +33,38 @@
         <button type="button" class="control" data-filter=".product">Product</button>
       </div>
     </div> --}}
+<div class="container cont-img ">
+    <a href="https://ma3louma.tn" class="thumb-a" target="\_blank">
+        <div class="item-hover">
+          <div class="hover-text"><h3>
+              MA3LOUMA
+            </h3></div>
+        </div>
+        <div class="item-img">
+            <img class="img-fluid rounded mx-auto d-block" src="{{ asset('ma3louma.png') }}"/>
+        </div>
+    </a>
 
+    {{-- <div class="mix portrait"> --}}
+        {{-- <a href="" class="thumb-a" target="\_blank">
+           <div class="item-hover hover-size">
+             <div class="hover-text"><h3>
+                test
+               </h3></div>
+           </div>
+           <div class="item-img">
+             <img src="{{ asset('by-magdalena-roeseler.jpg') }}"/>
+           </div>
+       </a> --}}
+       {{-- </div> --}}
+      </div>
+</div>
  <div class="row">
 
      <div class="fw mix-container home-gallery">
          @foreach ($websites as $website)
          <div class="mix portrait">
-         <a href="project-1.html" class="thumb-a">
+         <a href="{{ $website->link}}" class="thumb-a" target="\_blank">
             <div class="item-hover">
               <div class="hover-text"><h3>
                   {{ $website->title}}
@@ -48,7 +73,7 @@
             <div class="item-img">
               <img src="{{ asset('by-magdalena-roeseler.jpg') }}"/>
             </div>
-         </a>
+        </a>
         </div>
         @endforeach
 
@@ -226,3 +251,23 @@
 </section>
 
 @endsection
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        {{-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> --}}
+      </div>
+    </div>
+  </div>
