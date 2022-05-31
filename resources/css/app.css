@@ -79,12 +79,13 @@ h5 {
 }
 .btn {
     padding: 10px 40px;
+    box-shadow: 2px 5px 4px #888888;
 }
 
 .btn {
-    background-color: #252525;
-    border: 1px solid #252525;
-    color: #fff;
+        background-color: #19a1a374;
+        /* border: 1px solid #252525; */
+        /* color: #fff; */
 }
 
 .btn:hover {
@@ -116,7 +117,7 @@ CSS Search box
 .form{
 
     position: relative;
-    box-shadow: 5px 10px 8px #888888;
+    /* box-shadow: 5px 10px 8px #888888; */
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -151,16 +152,18 @@ CSS Search box
 
 .form-input{
 
-    height: 55px;
+    height: 45px;
     text-indent: 33px;
-    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 4px #888888;
 }
 
 .form-input:focus{
 
-    box-shadow: none;
-    border:none;
+    box-shadow: inset;
+    border: #06060674;
 }
+
 
 
 /*=============================

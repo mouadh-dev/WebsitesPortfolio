@@ -42,17 +42,17 @@
 
         {{-- <div class="container"> --}}
 
-        <div class="row height d-flex justify-content-center align-items-center">
+        <div class="container height d-flex justify-content-center ">
 
             <div class="col-md-6">
 
-                <form class="form" action="{{ route('home.index') }}" method="get">
+                <form class="form row align-items-center" action="{{ route('home.index') }}" method="get">
                     <i class="fa fa-search"></i>
-                    <input type="text" class="form-control form-input" placeholder="Search anything..."
+                    <input type="text" class="input-search form-control form-input form-group col" placeholder="Search anything..."
                         value="{{ request('search_query') }}" name='search_query' id='search'>
-                    <div class="form-group col align-self-end ">
+                    <div class=" col align-self-end ">
 
-                        <input type="submit" value="search" class="btn btn-primary ">
+                        <input type="submit" value="search" class="btn  form-group col align-self-end ">
                     </div>
                     {{-- <span class="left-pan"><i class="fa fa-search"></i></span> --}}
                 </form>
