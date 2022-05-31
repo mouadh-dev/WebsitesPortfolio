@@ -294,6 +294,7 @@ Cover Image
 ==========*/
 .cont-img{
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .cont-img .thumb-a {
@@ -508,12 +509,15 @@ Home Page Gallery
 
 .home-gallery .item-img {
     display: inline-block;
-    margin: 0 auto;
+    margin: 3 auto;
 }
 
 .home-gallery .item-img img {
     max-width: 100%;
+    /* width: 600px; */
+    height: 250px;
 }
+
 
 .section-title {
     text-align: center;
