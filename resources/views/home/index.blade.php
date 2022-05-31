@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-{{-- 
+{{--
 <div id="hero-text">
     <div class="container"> --}}
       {{-- <h1>Hi. Hello.. I Am JohnDas...!</h1> --}}
@@ -8,10 +8,10 @@
       {{-- <h5>AWARD WINNING PHOTOGRAPHER  / CINEMATOGRAPHER / WRITER</h5> --}}
     {{-- </div>
   </div> --}}
-</header>
+{{-- </header> --}}
 
 <!-- Corner Borders -->
-<section class="borders">
+{{-- <section class="borders">
   <div class="brTR">
   </div>
   <div class="brTL">
@@ -20,7 +20,7 @@
   </div>
   <div class="brBR">
   </div>
-</section>
+</section> --}}
 
 <section class="gallery">
   <div class="container-fluid">
@@ -38,6 +38,25 @@
     </a>
       </div>
 </div>
+
+{{-- <div class="container"> --}}
+
+    <div class="row height d-flex justify-content-center align-items-center">
+
+      <div class="col-md-6">
+
+        <div class="form">
+          <i class="fa fa-search"></i>
+          <input type="text" class="form-control form-input" placeholder="Search anything...">
+          {{-- <span class="left-pan"><i class="fa fa-search"></i></span> --}}
+        </div>
+
+      </div>
+
+    </div>
+
+  {{-- </div> --}}
+
  <div class="row">
 
      <div class="fw mix-container home-gallery">
