@@ -20,13 +20,13 @@ class Website extends Model
     protected $fillable = [
         'title',
         'link',
-        'featured_image_id',
+        'image',
     ];
 
     // One-to-Many (with foreign id)
     public function hero()
     {
-        return $this->hasOne(Attachment::class, 'id', 'featured_image_id')->withDefault();
+        return $this->hasOne(Attachment::class, 'id', 'image')->withDefault();
     }
 
 }
