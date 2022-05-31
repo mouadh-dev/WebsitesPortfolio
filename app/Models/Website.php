@@ -12,7 +12,7 @@ use Orchid\Attachment\Models\Attachment;
 class Website extends Model
 {
     use AsSource, Filterable, Attachable;
-     /**
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
@@ -20,13 +20,16 @@ class Website extends Model
     protected $fillable = [
         'title',
         'link',
-        'image',
+        'images',
+
     ];
 
-    // One-to-Many (with foreign id)
-    public function hero()
-    {
-        return $this->hasOne(Attachment::class, 'id', 'image')->withDefault();
-    }
-
+// One-to-Many (with foreign id)
+public function image()
+{
+    return $this->hasOne(Attachment::class, 'id', 'image')->withDefault();
+}
+public function show($value){
+   return "<img src='$value' class='w-100' />";
+}
 }
