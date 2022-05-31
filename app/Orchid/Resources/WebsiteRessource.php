@@ -74,7 +74,9 @@ class WebsiteRessource extends Resource
             Sight::make('id'),
         Sight::make('title'),
         Sight::make('link'),
-        Sight::make('images'),
+        Sight::make('images')->render(function ($model) {
+            return $model->show($model->images);
+        }),
         ];
     }
 
