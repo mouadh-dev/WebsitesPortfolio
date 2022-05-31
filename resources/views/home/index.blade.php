@@ -71,7 +71,7 @@
                 </h3></div>
             </div>
             <div class="item-img">
-              <img src="{{ asset('by-magdalena-roeseler.jpg') }}"/>
+              <img src="{{ asset( $website->images)}}"/>
             </div>
         </a>
         </div>

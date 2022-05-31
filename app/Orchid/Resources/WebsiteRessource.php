@@ -6,6 +6,9 @@ use App\Models\Website;
 use Orchid\Crud\Resource;
 use Orchid\Screen\TD;
 use Orchid\Screen\Fields\Input;
+use Orchid\Screen\Fields\Picture;
+use Orchid\Screen\Fields\Upload;
+use Orchid\Screen\Sight;
 
 class WebsiteRessource extends Resource
 {
@@ -30,9 +33,7 @@ class WebsiteRessource extends Resource
         Input::make('link')
         ->title('Link')
         ->placeholder('Enter link here'),
-        // Input::make('image')
-        // ->title('Image'),
-        // ->placeholder('Enter link here'),
+        Picture::make('images'),
     ];
     }
 
@@ -47,6 +48,9 @@ class WebsiteRessource extends Resource
             TD::make('id'),
             TD::make('title'),
             TD::make('link'),
+            TD::make('images')->render(function ($model) {
+                return $model->show($model->images);
+            }),
             TD::make('created_at', 'Date of creation')
                 ->render(function ($model) {
                     return $model->created_at->toDateTimeString();
@@ -70,6 +74,7 @@ class WebsiteRessource extends Resource
             Sight::make('id'),
         Sight::make('title'),
         Sight::make('link'),
+        Sight::make('images'),
         ];
     }
 
@@ -83,5 +88,5 @@ class WebsiteRessource extends Resource
         return [];
     }
 
-   
+
 }
