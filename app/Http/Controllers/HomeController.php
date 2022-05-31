@@ -12,7 +12,9 @@ class HomeController extends Controller
         $websites = Website::all();
         if(request()->has('search_query')) {
 
-            $websites = Website::where('title' , 'like' , "%".request('search_query')."%")->get();
+            $websites = Website::where('title' , 'like' , "%".request('search_query')."%")
+            ->orWhere('link' , 'like' , "%".request('search_query')."%")
+            ->get();
 
         }
         // dd($websites);
