@@ -13,7 +13,7 @@
             <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">ABOUT ME</a>
+            <a class="nav-link" href="/about">ABOUT US</a>
           </li>
           {{-- <li class="nav-item">
             <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
