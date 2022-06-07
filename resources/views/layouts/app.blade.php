@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     {{-- <title>JPhotography - Minimal Photography Portfolio HTML5 Template</title> --}}
-    <meta name="description" content="JPhotography - Minimal Photography Portfolio HTML5 Template">
+    <meta name="description" content="WatchMun - Portfolio for Municipalities">
 
     <!-- Playfair Display - Raleway Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Raleway:100,300,400,600,700" rel="stylesheet">
