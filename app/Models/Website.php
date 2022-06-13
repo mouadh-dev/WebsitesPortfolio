@@ -19,6 +19,7 @@ class Website extends Model
      */
     protected $fillable = [
         'title',
+        'slug',
         'link',
         'images',
 
@@ -30,6 +31,6 @@ public function image()
     return $this->hasOne(Attachment::class, 'id', 'image')->withDefault();
 }
 public function show($value){
-   return "<img src='$value' class='w-100' />";
+   return "<img src='$value' style='width:100px;' />";
 }
 }

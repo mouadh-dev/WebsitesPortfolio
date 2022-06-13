@@ -47,7 +47,9 @@ class WebsiteRessource extends Resource
             Input::make('title')
         ->title('Title')
         ->placeholder('Enter title here')->required(),
-
+        Input::make('slug')
+        ->title('slug')
+        ->placeholder('Enter slug here'),
         Input::make('link')
         ->title('Link')
         ->placeholder('Enter link here'),
@@ -66,6 +68,7 @@ class WebsiteRessource extends Resource
         return [
             TD::make('id'),
             TD::make('title'),
+            // TD::make('slug'),
             TD::make('link'),
             TD::make('images')->render(function ($model) {
                 return $model->show($model->images);
@@ -93,6 +96,7 @@ class WebsiteRessource extends Resource
         return [
             Sight::make('id'),
         Sight::make('title'),
+        Sight::make('slug'),
         Sight::make('link'),
         Sight::make('images')->render(function ($model) {
             return $model->show($model->images);
