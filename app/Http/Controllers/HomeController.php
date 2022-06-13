@@ -14,6 +14,7 @@ class HomeController extends Controller
 
             $websites = Website::where('title' , 'like' , "%".request('search_query')."%")
             ->orWhere('link' , 'like' , "%".request('search_query')."%")
+            ->orWhere('slug' , 'like' , "%".request('search_query')."%")
             ->get();
 
         }
