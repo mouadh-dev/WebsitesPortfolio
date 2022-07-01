@@ -14,7 +14,7 @@
             </p>
         </div>
         <div class="d-none d-lg-block col align-self-center text-end text-muted p-4">
-            {{-- <img src="{{asset('itech.png')}}" width="100em" height="100%"/> --}}
+            <img src="{{asset('logotech.png')}}" width="100em" height="100%"/>
         </div>
     </div>
 

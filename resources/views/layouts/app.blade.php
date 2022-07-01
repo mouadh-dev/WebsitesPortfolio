@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="{{asset('w.png')}}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    {{-- <title>JPhotography - Minimal Photography Portfolio HTML5 Template</title> --}}
+    <title>watchmun</title>
     <meta name="description" content="WatchMun - Portfolio for Municipalities">
 
     <!-- Playfair Display - Raleway Fonts -->
